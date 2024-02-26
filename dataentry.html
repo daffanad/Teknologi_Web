@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry&#9855;</title>
+    <style>
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            text-align: start;
+            background: url('https://i.pinimg.com/originals/22/b9/64/22b964733fcaba85f577ecf093e7e7e5.jpg') center/cover no-repeat;
+            margin: 10px;
+        }
+        form {
+            width: 80%;
+            margin: auto;
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px;
+            background-color: #ff8383;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fffb00;
+        }
+    </style>
+</head>
+<body>
+    <h1>ENTRY DATA &#9941;AMU </h1>
+    <form action="#" method="post">
+        <label for="nama">1. Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="nrp">2. NRP:</label>
+        <input type="text" id="nrp" name="nrp" required>
+
+        <label for="kelas">3. Kelas:</label>
+        <input type="text" id="kelas" name="kelas" required>
+
+        <label>4. Jenis Kelamin:
+            <input type="radio" name="jenis_kelamin" value="Pria" id="pria">
+            <label for="pria">Pria</label>
+            <input type="radio" name="jenis_kelamin" value="Wanita" id="wanita">
+            <label for="wanita">Wanita</label>
+        </label>
+
+        <label for="agama">5. Agama:
+            <select id="agama" name="agama" required>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+            </select>
+        </label>
+
+        <label for="tempat_tanggal_lahir">6. Tempat/Tanggal Lahir:</label>
+        <input type="text" id="tempat_tanggal_lahir" name="tempat_tanggal_lahir" required>
+
+        <label for="alamat">7. Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+        <label>8. Riwayat Pendidikan:
+            <input type="text" name="sd" placeholder="A. SD" required>
+            <input type="text" name="smp" placeholder="B. SMP" required>
+            <input type="text" name="sma" placeholder="C. SMA" required>
+        </label>
+
+        <label for="email">9. Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="homepage">10. Homepage:</label>
+        <input type="text" id="homepage" name="homepage" required>
+
+        <label for="hobby">11. Hobby:</label>
+        <textarea id="hobby" name="hobby" rows="3" required></textarea>
+
+        <label>12. Interest:
+            <input type="checkbox" name="interest[]" value="Penari Ballet"> Penari Ballet
+            <input type="checkbox" name="interest[]" value="Wakil Presiden"> Wakil Presiden
+            <input type="checkbox" name="interest[]" value="Ahli Waris"> Ahli Waris
+            <input type="checkbox" name="interest[]" value="Ahli Kehutanan"> Ahli Kehutanan
+            <input type="checkbox" name="interest[]" value="Polisi Jogja"> Polisi Jogja
+        </label>
+
+        <button type="submit">SIMPAN</button>
+        <button type="reset">RESET</button>
+    </form>
+</body>
+</html>
